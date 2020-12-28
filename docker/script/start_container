@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo docker run --name divider1 -i --rm \
+--env "App.Divider.generate = true" \
+--env "App.Divider.total_number = 15" \
+--env "App.Divider.file_path = /data/person.txt" \
+divider:v1
+
